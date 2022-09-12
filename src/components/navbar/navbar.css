@@ -1,0 +1,262 @@
+
+/***********************************************
+*********** MOBILE/TABLET STYLES ***********
+************************************************/ 
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0rem;
+    position:-webkit-sticky;
+    position:sticky;
+    top: 0;
+    background-color: #000;
+    box-shadow: 0rem .8rem .8rem rgba(0, 0, 0, 0.5);
+}
+
+.left-nav{
+    flex: 6;
+    padding-left: 2rem;
+}
+
+.center-nav{
+    flex: 0;
+}
+
+.logo-text{
+    color: #fff;
+    font-size: 2.75rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+
+.nav{
+    display: none;
+}
+
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: absolute;
+    top: 10.5rem;
+    left: 0;
+    right: 0;
+    
+    border-top: .1rem solid #fff;
+    border-bottom: .1rem solid #fff;
+    box-shadow: 0rem .5rem .8rem rgba(0, 0, 0, 0.5);
+}
+
+.mobile-nav > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    border-top: .1rem solid rgba(87, 87, 87, 0.3);
+    border-bottom: .1rem solid rgba(201, 201, 201, 0.3);
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.active-link{
+    text-decoration: none;
+    color: #000;
+    background-color: var(--gold);
+    padding: 3rem 0rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.artists-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.artists-list > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    
+    border-top: .1rem solid rgba(87, 87, 87, 0.3);
+    border-bottom: .1rem solid rgba(201, 201, 201, 0.3);
+}
+
+.hide-artists-list{
+    display: none;
+}
+
+.caret-icon{
+    padding-left: .5rem;
+    
+}
+
+.right-nav{
+    display: block;
+}
+
+.social-icon-nav{
+    display: none;
+}
+
+.social-media{
+    display: none;
+}
+
+.mobile-icon-btn{
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.mobile-bars{
+    font-size: 4rem;
+}
+
+.mobile-close{
+    font-size: 4.5rem;
+}   
+
+
+/********************************************
+*********** LAPTOP/DESKTOP STYLES ***********
+********************************************/ 
+
+@media only screen and (min-width: 1200px) {
+        
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0rem;
+        position:-webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #000;
+        box-shadow: 0rem .8rem .8rem rgba(0, 0, 0, 0.5);
+    }
+    
+    .left-nav{
+        flex: 3;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .logo-text:hover{
+        font-size: 3rem;
+    }
+
+    .center-nav{
+        flex: 7;
+    }
+
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav > li {
+        list-style: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .right-nav{
+        flex: 3;
+        
+    }
+
+    .mobile-bars, .mobile-close{
+        display: none;
+    }   
+
+    .social-media{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 4rem;
+    }
+
+    .social-nav{
+        color: var(--gold);
+        font-size: 3.5rem;
+        padding: 2rem 3rem;
+        border-radius: 2rem;
+
+    }
+
+    .social-nav:hover{
+        cursor: pointer;
+        font-size: 4rem;
+    }
+
+    .active-link{
+        color: var(--gold);
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .link:hover, .active-link:hover {
+        cursor: pointer;
+        color: var(--gold);
+        font-size: 2.75rem;
+    }
+
+    .artists-list{
+        background-color: #000;
+        position: absolute;
+        margin-top: 38rem;
+        width: 20%;
+    }
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+
+/************************************
+*********** MOBILE STYLES ***********
+*************************************/ 
+
+.aftercare{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.aftercare-landing{
+    max-width: 100%;
+    height: 86vh;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.aftercare-overlay{
+    position: absolute;
+    top: 10rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -9;
+}
+
+.page-title{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 3rem 5rem;
+    margin-top: 22rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    animation: fadeinTitle ease-in 2s;
+}
+
+@keyframes fadeinTitle{
+    0% { 
+        opacity: 0; 
+    }
+
+    100% { 
+        opacity: 1; 
+    }
+}
+
+.aftercare-directions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.direction-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.direction-title{
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--gold);
+    font-weight: 500;
+    background-color: #000;
+    padding: .5em 1.37em;
+    text-align: center;
+    box-shadow: 0rem .8rem .8rem #888888;
+}
+
+.direction-text{
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    max-width: 80%;
+    line-height: 4rem;
+    padding: 5rem 0rem;
+    margin: 0 auto;
+}
+
+/************************************
+*********** TABLET STYLES ***********
+*************************************/ 
+
+@media only screen and (min-width: 600px) {
+    .aftercare-overlay{
+        height: 88%;  
+    }
+}
+
+
+/************************************
+*********** LAPTOP STYLES ***********
+*************************************/ 
+
+@media only screen and (min-width: 1200px) {
+    
+    .direction-text{
+        font-size: 2.4rem;
+        max-width: 70%;
+    }
+    
+}
+
+

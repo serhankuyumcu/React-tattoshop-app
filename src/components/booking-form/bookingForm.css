@@ -1,0 +1,163 @@
+
+
+/************************************
+*********** MOBILE STYLES ***********
+*************************************/ 
+
+.booking-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.form-title{
+    font-size: 3.1rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+form{
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0rem;
+}
+
+.labels{
+    display: block;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: .5rem 0rem;
+}
+
+.inputs{
+    display: block;
+    max-width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: .8rem;
+    border: .2rem solid #000;
+}
+
+.artist-select{
+    font-size: 1.5rem;
+    border-radius: .8rem;
+    color: #757575;
+    background-color: rgba(0, 0, 0, 0);
+    border: .2rem solid #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1.5rem;
+}
+
+.radio-inputs{
+    display: flex;
+    align-items: center;
+}
+
+.date-input{
+    font-size: 1.5rem;
+    border-radius: .8rem;
+    color: #757575;
+    background-color: rgba(0, 0, 0, 0);
+    border: .2rem solid #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5rem;
+    padding: 1.5rem;
+}
+
+.textarea{
+    display: block;
+    max-width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: .8rem;
+    border: .2rem solid #000;
+}
+
+.file-input{
+    display: block;
+    max-width: 100%;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    padding: 1rem;
+    color: #000;
+    font-size: 1.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .8rem;
+}
+
+.submit-btn{
+    display: block;
+    max-width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: .8rem;
+    border: .2rem solid #000;
+    background-color: var(--gold);
+    color: #000;
+    margin-top: 1.5rem;
+}
+
+.err-msg{
+    color: red;
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.asterik{
+    color:red;
+}
+
+/************************************
+*********** TABLET STYLES ***********
+*************************************/ 
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+
+/************************************
+*********** LAPTOP STYLES ***********
+*************************************/ 
+
+@media only screen and (min-width: 1200px) {
+    .inputs, .date-input, .artist-select, .textarea, .file-input, .submit-btn{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .labels{
+        margin-left: 25%;
+    }
+    
+    .submit-btn{
+        cursor: pointer;
+    }
+
+    .err-msg{
+        margin: 0 auto;
+    }
+    
+}
+
