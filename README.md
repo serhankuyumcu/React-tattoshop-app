@@ -4,5 +4,5 @@ A react projects also include a serverless emailjs implementation.
 ![Adsız2](https://user-images.githubusercontent.com/63939769/189640959-a617125d-0ffa-425b-9c04-9e46b86af9c4.png)<br><br>
 1- emailjs configuration for mail issues. https://dashboard.emailjs.com/sign-in<br>
 2- npm install for packages.<br>
-3- also essential be warned about react-router-dom version and usages steps. React-router-dom v5 or v6. Each one of them have different implementation.
+3- also essential be warned about react-router-dom version and usages steps. React-router-dom v5 or v6. Each one of them have different implementation.<br>
 4- yup package for basic data model.
